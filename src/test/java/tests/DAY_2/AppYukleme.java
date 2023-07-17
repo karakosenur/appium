@@ -23,7 +23,7 @@ public class AppYukleme {
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,"UiAutomator2"); // Eger ki kullandigimiz android surumu 6 veya ustuyse UiAutomator2 kullanilir
         // Eger ki kullandigimiz android surumu 6 veya ustuyse UiAutomator2 kullanilir
 
-        capabilities.setCapability(MobileCapabilityType.APP,"C:\\Users\\Nurullah Karaköse\\IdeaProjects\\appium\\Apps\\arabam.com_4.8.0_Apkpure.apk");
+        capabilities.setCapability(MobileCapabilityType.APP,"C:\\Users\\Nurullah Karaköse\\IdeaProjects\\appium\\Apps\\Kiwi.com - Book Cheap Flights_2023.14.0_Apkpure (1).apk");
 
         // app capabilityType bir uygulamayi yuklemek istedigimizde indirdigimiz apk dosyasinin path uzantisini vererek o uygulamayi yuklemek icin kullandigimiz desiredCapability
         driver=new AndroidDriver<AndroidElement>(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
