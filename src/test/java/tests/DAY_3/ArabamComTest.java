@@ -1,4 +1,4 @@
-package tests;
+package tests.DAY_3;
 
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
@@ -96,18 +96,18 @@ public class ArabamComTest {
         driver.findElementById("com.dogan.arabam:id/btnNext").click();
         // degisen bilgisi ekleyerek tramer kaydi belirtelim
         Thread.sleep(2000);
-        driver.findElementById("com.dogan.arabam:id/ivRightBackground").click();
-        driver.findElementByXPath("//*[@text='Boyalı']").click();
+        //driver.findElementById("com.dogan.arabam:id/ivRightBackground").click();
+        //driver.findElementByXPath("//*[@text='Boyalı']").click();
 
         Thread.sleep(2000);
 
         //touchAction.press(PointOption.point(540,2025)).release().perform();
-        driver.findElementById("com.dogan.arabam:id/btnNext").click();
+        driver.findElementById("com.dogan.arabam:id/btn_next").click();
         Thread.sleep(2000);
 
         driver.findElementByXPath("//*[@text='Bilmiyorum']").click();
 
-        driver.findElementByXPath("com.dogan.arabam:id/btn_next").click();
+        driver.findElementById("com.dogan.arabam:id/btn_next").click();
 
         // aracimizin fiyatinin 500.000 tl den fazla oldugunu test edelim
         String aracinFiyati=driver.findElementById("com.dogan.arabam:id/tvAveragePrice").getText();
